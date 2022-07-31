@@ -44,8 +44,8 @@ jobs:
           
       - name: Build
         run: |
-          npm run build -- 
+          npm run build --prod
           
       - name: Test
         run: |
-          npm run test -- --prod
+          npm run test --prod
