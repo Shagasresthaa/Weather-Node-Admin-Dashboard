@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { SigninModuleComponent } from './signin-module/signin-module.component';
 import { SignupModuleComponent } from './signup-module/signup-module.component';
 import { PassResetModuleComponent } from './pass-reset-module/pass-reset-module.component';
@@ -18,6 +19,10 @@ import { NodeActivityModuleComponent } from './node-activity-module/node-activit
 import { NodeOTAUpdateModuleComponent } from './node-otaupdate-module/node-otaupdate-module.component';
 import { DataDownloadModuleComponent } from './data-download-module/data-download-module.component';
 import { NodeMapNetworkModuleComponent } from './node-map-network-module/node-map-network-module.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -40,7 +45,10 @@ import { NodeMapNetworkModuleComponent } from './node-map-network-module/node-ma
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
