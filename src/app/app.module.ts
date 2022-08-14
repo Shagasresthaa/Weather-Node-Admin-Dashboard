@@ -20,7 +20,6 @@ import { NodeActivityModuleComponent } from './node-activity-module/node-activit
 import { NodeOTAUpdateModuleComponent } from './node-otaupdate-module/node-otaupdate-module.component';
 import { DataDownloadModuleComponent } from './data-download-module/data-download-module.component';
 import { NodeMapNetworkModuleComponent } from './node-map-network-module/node-map-network-module.component';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
