@@ -4,13 +4,13 @@
   
     <div class="content">
       <a mat-button color="primary" href="#">Link</a>
-      <button mat-button [matMenuTriggerFor]="dashmenu">Dashboard</button>
+      <button mat-button class="toolbtn" [matMenuTriggerFor]="dashmenu">Dashboard</button>
         <mat-menu #dashmenu="matMenu">
           <button mat-menu-item>Nodes Overview</button>
           <button mat-menu-item>Nodes Graph View</button>
           <button mat-menu-item>Nodes Data View</button>
         </mat-menu>
-        <button mat-button [matMenuTriggerFor]="admmenu">Admin</button>
+      <button mat-button class="toolbtn" [matMenuTriggerFor]="admmenu">Admin</button>
         <mat-menu #admmenu="matMenu">
           <button mat-menu-item>User Management</button>
           <button mat-menu-item>Node Management</button>
@@ -18,10 +18,10 @@
           <button mat-menu-item>Node OTA Update Utility</button>
           <button mat-menu-item>Admin Action Logs</button>
         </mat-menu>
-      <a mat-button href="#">Node Weather Map</a>
-      <a mat-button href="#">Raw Data</a>
-      <a mat-button href="#">Credits</a>
-      <a mat-raised-button href="#" color="warn">Logout</a>
+      <a mat-button class="toolbtn" href="#">Node Weather Map</a>
+      <a mat-button class="toolbtn" href="#">Raw Data</a>
+      <a mat-button class="toolbtn" href="#">Credits</a>
+      <a mat-raised-button class="toolbtn" href="#" color="warn">Logout</a>
     </div>
 </mat-toolbar>
   
