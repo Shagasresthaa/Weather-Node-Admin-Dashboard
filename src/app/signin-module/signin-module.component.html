@@ -1,17 +1,22 @@
 <mat-toolbar color="primary">
     <span>Weather Monitoring System Dashboard</span>
 </mat-toolbar>
-<div class="form-container">
-    <form class="example-form">
-        <mat-form-field class="example-full-width" appearance="fill">
-        <mat-label>User Name</mat-label>
-        <input matInput placeholder="Enter your name" name="usename">
-        </mat-form-field>
-        <mat-form-field class="example-full-width" appearance="fill">
+<form class="example-form">
+    <span class="lgn">Login</span>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Enter your Email ID" name="mailid" inputmode="email">
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
         <mat-label>Password</mat-label>
-        <input matInput placeholder="Enter your password" value="" name="password" type="password">
-        </mat-form-field>
-        <button mat-raised-button color="primary">Submit</button>
-    </form>
-</div>
+        <input matInput placeholder="Enter your Password" [type]="hide ? 'password' : 'text'" formControlName="password">
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </mat-form-field>
+    <button mat-raised-button color="primary">Submit</button>
+    <div class="options">
+        <button mat-button class="links" routerLink="/signup" color="primary">Sign Up</button>
+        <span class="example-spacer"></span>
+        <button mat-button class="links" routerLink="/forgot" color="primary">Reset Password</button>
+    </div>
+</form>
 
